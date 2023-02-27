@@ -188,13 +188,13 @@ We need several tools and libraries to
 access etherium and to create a quality website
 for hiring cab.
 
-Solidity - A computer programming language to access, write and implement smart contracts using ethereum
+1. Solidity - A computer programming language to access, write and implement smart contracts using ethereum
 
-Tuffle framework - Provides a framework for testing the contracts. Gives tools to installation of Smart Contracts in the blockchain.
+2. Tuffle framework - Provides a framework for testing the contracts. Gives tools to installation of Smart Contracts in the blockchain.
 
-Meta mask - It is used to read and write in smart contracts so that transactions will be made. 
+3. Meta mask - It is used to read and write in smart contracts so that transactions will be made. 
 
-MongoDB - All the data were saved in blockchain to access and display those data we need MongoDB.
+4. MongoDB - All the data were saved in blockchain to access and display those data we need MongoDB.
 
 #### Flow of the Cab Hiring Website: 
 To create the prototype of the proposed framework we
@@ -227,14 +227,23 @@ dashboards of the website.
 This web app will locate the latitude and longitude of both the rider and the driver using a python program then it will calculate the distance between them using an
 algorithm called Haversine formula. 
 
-Haversine formula: 
+#### Haversine formula: 
+
 We can calculate the distance between two points using Haversine algorithm.
 Let we consider latitude as latt and longitude as long,(where latt and long are in radians) At first we have to convert latt and long in radians,
-(Latt1 and latt2 be latitude of rider and driver and long1 and long2 be longitude of rider and driver) slong =long2-long1 slatt=latt2-latt1 D=2*6371*arcsine( 𝑠𝑖𝑛(𝑠𝑙𝑎𝑡𝑡/2) 2 + 𝑐𝑜𝑠(𝑠𝑙𝑎𝑡𝑡1) * 𝑐𝑜𝑠(𝑠𝑙𝑜𝑛𝑔1) * 𝑠𝑖𝑛(𝑠𝑙𝑜𝑛𝑔/2) 2 )Where arcsine is a math function which converts the number in radians (in between -1 to +1) and 6371 is the radius of earth in kilometres. 4. Pricing Algorithm : By including google maps in our project we could easily measure the distance between rider and the driver. And we could calculate the cost of the ride using a smart contract as per the distance of the ride by the driver. We could also use the below formula to calculate the distance,
-d= (𝑥 2 –𝑥 1) 2 − (𝑦 2 − 𝑦 1) 2
+(Latt1 and latt2 be latitude of rider and driver and long1 and long2 be longitude of rider and driver) 
+
+![Formula](https://user-images.githubusercontent.com/106262083/221476411-7482e978-98b0-48c6-98bc-2390237e4a42.png)
+
+Where arcsine is a math function which converts the number in radians (in between -1 to +1) and 6371 is the radius of earth in kilometres.
+
+#### Pricing Algorithm : 
+By including google maps in our project we could easily measure the distance between rider and the driver. And we could calculate the cost of the ride using a smart contract as per the distance of the ride by the driver. We could also use the below formula to calculate the distance,
+![Screenshot_20230227_101651](https://user-images.githubusercontent.com/106262083/221476667-70108ef2-59d2-4457-8f21-344a19821884.png)
 
 The workflow of the website is given below, 
 ## FLOWCHART: 
+![workflow](https://user-images.githubusercontent.com/106262083/221476782-539a6d35-4074-43ef-b38e-85022df1640f.png)
 
 ## MERITS: 
 
@@ -269,8 +278,8 @@ the blockchain with a larger software system and it analyses the data processing
 
 ## REFERENCE:
 
-1) https://en.wikipedia.org/wiki/Blockchain
-2)https://www.iieta.org/journals/ijsse/paper/1 0.18280/ijsse.110205 
-3)https://www.forbes.com/sites/bernardmarr/ 2018/02/02/blockchain-a-very-short-history-of -ethereum-everyone-should-read/?sh=26d005 a21e89 
-4)https://www.quicknode.com/ 
-5)https://www.youtube.com/watch?v=ZE2Hx TmxfrI
+1. https://en.wikipedia.org/wiki/Blockchain
+2. https://www.iieta.org/journals/ijsse/paper/10.18280/ijsse.110205 
+3. https://www.forbes.com/sites/bernardmarr/2018/02/02/blockchain-a-very-short-history-of-ethereum-everyone-should-read/?sh=26d005a21e89 
+4. https://www.quicknode.com/ 
+5. https://www.youtube.com/watch?v=ZE2HxTmxfrI
